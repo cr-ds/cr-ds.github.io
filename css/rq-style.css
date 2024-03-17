@@ -90,6 +90,21 @@ h4 {
     border-bottom-right-radius: 0;
 }
 
+#loading {
+    color: darkslategray;
+    font-size: large;
+    font-weight: bolder;
+
+    margin-top: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-brand {
+    color: #4d8bdc;
+    text-shadow: #f9c66e 1px 0 10px;
+}
+
 .plot-area {
     background-color: white;
 
@@ -161,4 +176,3 @@ h4 {
     overflow-x: auto;
     overflow-y: auto;
 }
-

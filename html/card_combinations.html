@@ -8,6 +8,12 @@
         <title>Clash Royale - Data Science Project</title>
     </head>
     <body>
+        <div id="loading" style="width: 100%; height: 100%;">
+          <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <p style="margin-left: 1%; margin-top: 10px;">Loading times may occur due to large plots. The content is displayed in a few seconds.</p>
+        </div>
         <div id="container">
             <div id="topside">
                 <div id="header">
@@ -16,7 +22,7 @@
                 <div id="menue">
                     <nav class="navbar bg-body-tertiary fixed-top">
                         <div class="container-fluid">
-                          <a class="navbar-brand" href="#"><h4>Clash Royale - Data Science Project</h4></a>
+                          <a class="navbar-brand" href="../index.html"><h4>Clash Royale - Data Science Project</h4></a>
                           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                           </button>
@@ -107,9 +113,7 @@
                         <!-- center-plot (for plots that are not to be shown across the full width) -->
                         <!-- fullwidth-plot (For plots that are to be shown across the full width) -->
                         <!-- ATTENTION: rq-plot has always to be a class of a plot div! -->
-                        <div id="plot1" class="rq-plot center-plot">
-                            {{scatter}}
-                        </div>
+                        <div id="plot1" class="rq-plot center-plot"></div>
                         <!-- End of graphic area -->
                     </div>
                     <!-- End of block for text and corresponding graphic -->
@@ -117,17 +121,13 @@
                         <div id="text2" class="rq-text">
                             <p>rq-text 2</p>
                         </div>
-                        <div id="plot2" class="rq-plot fullwidth-plot">
-                            {{violin}}  
-                        </div>
+                        <div id="plot2" class="rq-plot fullwidth-plot"></div>
                     </div>
                     <div id="plot-area3" class="plot-area">
                       <div id="text3" class="rq-text">
                           <p>rq-text 3</p>
                       </div>
-                      <div id="plot3" class="rq-plot fullwidth-plot">
-                            {{treemap}}
-                      </div>
+                      <div id="plot3" class="rq-plot fullwidth-plot"></div>
                     </div>
                     <div id="plot-area4" class="plot-area">
                       <div id="text4" class="rq-text">
@@ -168,110 +168,110 @@
                           </ul>
                           <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="wincon-tab-pane" role="tabpanel" aria-labelledby="wincon-tab" tabindex="0">
-                              <div id="wincon" class="bar-chart">
+                              <div class="bar-chart">
                                 <h4>Winconditions</h4>
-                                {{wincon}}
+                                <div id="wincon"></div>
                               </div>
                             </div>
                             <div class="tab-pane fade" id="support-tab-pane" role="tabpanel" aria-labelledby="support-tab" tabindex="0">
-                              <div id="support" class="bar-chart">
+                              <div class="bar-chart">
                                 <h4>Support Cards</h4>
-                                {{support}}
+                                <div id="support"></div>
                               </div>
                             </div>
                             <div class="tab-pane fade" id="single-tab-pane" role="tabpanel" aria-labelledby="single-tab" tabindex="0">
                               <div class="flex-container">
-                                <div id="topsingle" class="flex-child bar-chart">
+                                <div class="flex-child bar-chart">
                                   <h4>Single Cards - Best to Worst</h4>
-                                  {{topsingle}}
+                                  <div id="topsingle"></div>>
                                 </div>
-                                <div id="worstsingle" class="flex-child bar-chart">
+                                <div class="flex-child bar-chart">
                                   <h4>Single Cards - Worst to Best</h4>
-                                  {{worstsingle}}
+                                  <div id="worstsingle"></div> 
                                 </div>
                               </div>
                             </div>
                             <div class="tab-pane fade" id="two-tab-pane" role="tabpanel" aria-labelledby="two-tab" tabindex="0">
                               <div class="flex-container">
-                                <div id="toptwo" class="flex-child bar-chart">
+                                <div class="flex-child bar-chart">
                                   <h4>Top 100 Two Card Combinations</h4>
-                                  {{toptwo}}
+                                  <div id="toptwo"></div>
                                 </div>
-                                <div id="worsttwo" class="flex-child bar-chart">
+                                <div class="flex-child bar-chart">
                                   <h4>Worst 100 Two Card Combinations</h4>
-                                  {{worsttwo}}
+                                  <div id="worsttwo"></div>
                                 </div>
                               </div>
                             </div>
                             <div class="tab-pane fade" id="three-tab-pane" role="tabpanel" aria-labelledby="three-tab" tabindex="0">
                               <div class="flex-container">
-                                <div id="topthree" class="flex-child bar-chart">
+                                <div class="flex-child bar-chart">
                                   <h4>Top 100 Three Card Combinations</h4>
-                                  {{topthree}}
+                                  <div id="topthree"></div>
                                 </div>
-                                <div id="worstthree" class="flex-child bar-chart">
+                                <div class="flex-child bar-chart">
                                   <h4>Worst 100 Three Card Combinations</h4>
-                                  {{worstthree}}
+                                  <div id="worstthree"></div>>
                                 </div>
                               </div>
                             </div>
                             <div class="tab-pane fade" id="four-tab-pane" role="tabpanel" aria-labelledby="four-tab" tabindex="0">
                               <div class="flex-container">
-                                <div id="topfour" class="flex-child bar-chart">
+                                <div class="flex-child bar-chart">
                                   <h4>Top 100 Four Card Combinations</h4>
-                                  {{topfour}}
+                                  <div id="topfour"></div>>
                                 </div>
-                                <div id="worstfour" class="flex-child bar-chart">
+                                <div class="flex-child bar-chart">
                                   <h4>Worst 100 Four Card Combinations</h4>
-                                  {{worstfour}}
+                                  <div id="worstfour"></div>>
                                 </div>
                               </div>
                             </div>
                             <div class="tab-pane fade" id="five-tab-pane" role="tabpanel" aria-labelledby="five-tab" tabindex="0">
                               <div class="flex-container">
-                                <div id="topfive" class="flex-child bar-chart">
+                                <div class="flex-child bar-chart">
                                   <h4>Top 100 Five Card Combinations</h4>
-                                  {{topfive}}
+                                  <div id="topfive"></div>>
                                 </div>
-                                <div id="worstfive" class="flex-child bar-chart">
+                                <div class="flex-child bar-chart">
                                   <h4>Worst 100 Five Card Combinations</h4>
-                                  {{worstfive}}
+                                  <div id="worstfive"></div>>
                                 </div>
                               </div>
                             </div>
                             <div class="tab-pane fade" id="six-tab-pane" role="tabpanel" aria-labelledby="six-tab" tabindex="0">
                               <div class="flex-container">
-                                <div id="topsix" class="flex-child bar-chart">
+                                <div class="flex-child bar-chart">
                                   <h4>Top 100 Six Card Combinations</h4>
-                                  {{topsix}}
+                                  <div id="topsix"></div>>
                                 </div>
-                                <div id="worstsix" class="flex-child bar-chart">
+                                <div class="flex-child bar-chart">
                                   <h4>Worst 100 Six Card Combinations</h4>
-                                  {{worstsix}}
+                                  <div id="worstsix"></div>>
                                 </div>
                               </div>
                             </div>
                             <div class="tab-pane fade" id="seven-tab-pane" role="tabpanel" aria-labelledby="seven-tab" tabindex="0">
                               <div class="flex-container">
-                                <div id="topseven" class="flex-child bar-chart">
+                                <div class="flex-child bar-chart">
                                   <h4>Top 100 Seven Card Combinations</h4>
-                                  {{topseven}}
+                                  <div id="topseven"></div>>
                                 </div>
-                                <div id="worstseven" class="flex-child bar-chart">
+                                <div class="flex-child bar-chart">
                                   <h4>Worst 100 Seven Card Combinations</h4>
-                                  {{worstseven}}
+                                  <div id="worstseven"></div>>
                                 </div>
                               </div>
                             </div>
                             <div class="tab-pane fade" id="deck-tab-pane" role="tabpanel" aria-labelledby="deck-tab" tabindex="0">
                               <div class="flex-container">
-                                <div id="topdecks" class="flex-child bar-chart">
+                                <div class="flex-child bar-chart">
                                   <h4>Top 100 Decks</h4>
-                                  {{topdecks}}
+                                  <div id="topdecks"></div>>
                                 </div>
-                                <div id="worstdecks" class="flex-child bar-chart">
+                                <div class="flex-child bar-chart">
                                   <h4>Worst 100 Decks</h4>
-                                  {{worstdecks}}
+                                  <div id="worstdecks"></div>
                                 </div>
                               </div>
                             </div>
@@ -285,32 +285,8 @@
                 </div>
             </div>
         </div>
-        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <script>
-          $(function(){
-            $("#plot1").load("../plots/deckProperties_plot1.html");
-            $("#plot2").load("../plots/deckProperties_plot2.html");
-            $("#plot3").load("../plots/deckProperties_plot3.html");
-            $("#wincon").load("../plots/deckProperties_plot4.html");
-            $("#support").load("../plots/deckProperties_plot5.html");
-            $("#topsingle").load("../plots/deckProperties_plot6.html");
-            $("#worstsingle").load("../plots/deckProperties_plot7.html");
-            $("#toptwo").load("../plots/deckProperties_plot8.html");
-            $("#worsttwo").load("../plots/deckProperties_plot9.html");
-            $("#topthree").load("../plots/deckProperties_plot10.html");
-            $("#worstthree").load("../plots/deckProperties_plot11.html");
-            $("#topfour").load("../plots/deckProperties_plot12.html");
-            $("#worstfour").load("../plots/deckProperties_plot13.html");
-            $("#topfive").load("../plots/deckProperties_plot14.html");
-            $("#worstfive").load("../plots/deckProperties_plot15.html");
-            $("#topsix").load("../plots/deckProperties_plot16.html");
-            $("#worstsix").load("../plots/deckProperties_plot17.html");
-            $("#topseven").load("../plots/deckProperties_plot18.html");
-            $("#worstseven").load("../plots/deckProperties_plot19.html");
-            $("#topdecks").load("../plots/deckProperties_plot20.html");
-            $("#worstdecks").load("../plots/deckProperties_plot21.html");
-          });
-        </script>
+        <script src="../js/card_combinations.js"></script>
       </body>
 </html>
