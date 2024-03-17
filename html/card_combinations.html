@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../css/rq-style.css">
+        <title>Clash Royale - Data Science Project</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="topside">
+                <div id="header">
+
+                </div>
+                <div id="menue">
+                    <nav class="navbar bg-body-tertiary fixed-top">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="#"><h4>Clash Royale - Data Science Project</h4></a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Clash Royale - Data Science Project</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <hr>
+                                </li>
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Decks & Cards
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="card_combinations.html">Card Combinations</a></li>
+                                    <li><a class="dropdown-item" href="buildings.html">Buildings</a></li>
+                                    <li><a class="dropdown-item" href="spells.html">Spells</a></li>
+                                  </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Pay To Win
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="evos.html">Evolutions</a></li>
+                                      <li><a class="dropdown-item" href="level.html">Level 15 Cards</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Elixir
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="leaked_elixir.html">Leaked Elixir</a></li>
+                                      <li><a class="dropdown-item" href="avg_elixir.html">Average Elixir Cost</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="time.html">Times & Days</a>
+                                </li>
+                                <li class="nav-item">
+                                    <hr>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" style="text-decoration: underline; font-weight: bold;">Imprint</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">Sven G.</a>
+                                    <a class="nav-link">Marten K.</a>
+                                    <a class="nav-link">Philipp W.</a>
+                                    <a class="nav-link">Content was created as part of the Data Science project at Kiel University.</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div id="general">
+                <div id="content">
+                    <div id="boxheader">
+                        <h1>Research Question Headline</h1>
+                    </div>
+                    <div class="horizontal-line"></div>
+                    <!-- Begin of block for text and corresponding graphic -->
+                    <div id="plot-area1" class="plot-area">
+                        <!-- Begin of text area for a graphic -->
+                        <div id="text1" class="rq-text">
+                            <h4>Headline</h4>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+                                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+                                Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
+                                consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
+                                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+                                no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <!-- End of text area for a graphic -->
+                        <!-- Begin of graphic area: for each graphic own placeholder name such as fig1 -->
+                        <!-- There are 2 classes for plots:  -->
+                        <!-- center-plot (for plots that are not to be shown across the full width) -->
+                        <!-- fullwidth-plot (For plots that are to be shown across the full width) -->
+                        <!-- ATTENTION: rq-plot has always to be a class of a plot div! -->
+                        <div id="plot1" class="rq-plot center-plot">
+                            {{scatter}}
+                        </div>
+                        <!-- End of graphic area -->
+                    </div>
+                    <!-- End of block for text and corresponding graphic -->
+                    <div id="plot-area2" class="plot-area">
+                        <div id="text2" class="rq-text">
+                            <p>rq-text 2</p>
+                        </div>
+                        <div id="plot2" class="rq-plot fullwidth-plot">
+                            {{violin}}  
+                        </div>
+                    </div>
+                    <div id="plot-area3" class="plot-area">
+                      <div id="text3" class="rq-text">
+                          <p>rq-text 3</p>
+                      </div>
+                      <div id="plot3" class="rq-plot fullwidth-plot">
+                            {{treemap}}
+                      </div>
+                    </div>
+                    <div id="plot-area4" class="plot-area">
+                      <div id="text4" class="rq-text">
+                          <p>rq-text 4</p>
+                      </div>
+                      <div id="plot4" class="rq-plot left-align">
+                          <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active toggler" id="wincon-tab" data-bs-toggle="tab" data-bs-target="#wincon-tab-pane" type="button" role="tab" aria-controls="wincon-tab-pane" aria-selected="true">Winconditions</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link toggler" id="support-tab" data-bs-toggle="tab" data-bs-target="#support-tab-pane" type="button" role="tab" aria-controls="support-tab-pane" aria-selected="false">Support Cards</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link toggler" id="single-tab" data-bs-toggle="tab" data-bs-target="#single-tab-pane" type="button" role="tab" aria-controls="single-tab-pane" aria-selected="false">Single Card</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link toggler" id="two-tab" data-bs-toggle="tab" data-bs-target="#two-tab-pane" type="button" role="tab" aria-controls="two-tab-pane" aria-selected="false">Two Cards</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link toggler" id="three-tab" data-bs-toggle="tab" data-bs-target="#three-tab-pane" type="button" role="tab" aria-controls="three-tab-pane" aria-selected="false">Three Cards</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link toggler" id="four-tab" data-bs-toggle="tab" data-bs-target="#four-tab-pane" type="button" role="tab" aria-controls="four-tab-pane" aria-selected="false">Four Cards</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link toggler" id="five-tab" data-bs-toggle="tab" data-bs-target="#five-tab-pane" type="button" role="tab" aria-controls="five-tab-pane" aria-selected="false">Five Cards</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link toggler" id="six-tab" data-bs-toggle="tab" data-bs-target="#six-tab-pane" type="button" role="tab" aria-controls="six-tab-pane" aria-selected="false">Six Cards</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link toggler" id="seven-tab" data-bs-toggle="tab" data-bs-target="#seven-tab-pane" type="button" role="tab" aria-controls="seven-tab-pane" aria-selected="false">Seven Cards</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link toggler" id="deck-tab" data-bs-toggle="tab" data-bs-target="#deck-tab-pane" type="button" role="tab" aria-controls="deck-tab-pane" aria-selected="false">Decks</button>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="wincon-tab-pane" role="tabpanel" aria-labelledby="wincon-tab" tabindex="0">
+                              <div id="wincon" class="bar-chart">
+                                <h4>Winconditions</h4>
+                                {{wincon}}
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="support-tab-pane" role="tabpanel" aria-labelledby="support-tab" tabindex="0">
+                              <div id="support" class="bar-chart">
+                                <h4>Support Cards</h4>
+                                {{support}}
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="single-tab-pane" role="tabpanel" aria-labelledby="single-tab" tabindex="0">
+                              <div class="flex-container">
+                                <div id="topsingle" class="flex-child bar-chart">
+                                  <h4>Single Cards - Best to Worst</h4>
+                                  {{topsingle}}
+                                </div>
+                                <div id="worstsingle" class="flex-child bar-chart">
+                                  <h4>Single Cards - Worst to Best</h4>
+                                  {{worstsingle}}
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="two-tab-pane" role="tabpanel" aria-labelledby="two-tab" tabindex="0">
+                              <div class="flex-container">
+                                <div id="toptwo" class="flex-child bar-chart">
+                                  <h4>Top 100 Two Card Combinations</h4>
+                                  {{toptwo}}
+                                </div>
+                                <div id="worsttwo" class="flex-child bar-chart">
+                                  <h4>Worst 100 Two Card Combinations</h4>
+                                  {{worsttwo}}
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="three-tab-pane" role="tabpanel" aria-labelledby="three-tab" tabindex="0">
+                              <div class="flex-container">
+                                <div id="topthree" class="flex-child bar-chart">
+                                  <h4>Top 100 Three Card Combinations</h4>
+                                  {{topthree}}
+                                </div>
+                                <div id="worstthree" class="flex-child bar-chart">
+                                  <h4>Worst 100 Three Card Combinations</h4>
+                                  {{worstthree}}
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="four-tab-pane" role="tabpanel" aria-labelledby="four-tab" tabindex="0">
+                              <div class="flex-container">
+                                <div id="topfour" class="flex-child bar-chart">
+                                  <h4>Top 100 Four Card Combinations</h4>
+                                  {{topfour}}
+                                </div>
+                                <div id="worstfour" class="flex-child bar-chart">
+                                  <h4>Worst 100 Four Card Combinations</h4>
+                                  {{worstfour}}
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="five-tab-pane" role="tabpanel" aria-labelledby="five-tab" tabindex="0">
+                              <div class="flex-container">
+                                <div id="topfive" class="flex-child bar-chart">
+                                  <h4>Top 100 Five Card Combinations</h4>
+                                  {{topfive}}
+                                </div>
+                                <div id="worstfive" class="flex-child bar-chart">
+                                  <h4>Worst 100 Five Card Combinations</h4>
+                                  {{worstfive}}
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="six-tab-pane" role="tabpanel" aria-labelledby="six-tab" tabindex="0">
+                              <div class="flex-container">
+                                <div id="topsix" class="flex-child bar-chart">
+                                  <h4>Top 100 Six Card Combinations</h4>
+                                  {{topsix}}
+                                </div>
+                                <div id="worstsix" class="flex-child bar-chart">
+                                  <h4>Worst 100 Six Card Combinations</h4>
+                                  {{worstsix}}
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="seven-tab-pane" role="tabpanel" aria-labelledby="seven-tab" tabindex="0">
+                              <div class="flex-container">
+                                <div id="topseven" class="flex-child bar-chart">
+                                  <h4>Top 100 Seven Card Combinations</h4>
+                                  {{topseven}}
+                                </div>
+                                <div id="worstseven" class="flex-child bar-chart">
+                                  <h4>Worst 100 Seven Card Combinations</h4>
+                                  {{worstseven}}
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="deck-tab-pane" role="tabpanel" aria-labelledby="deck-tab" tabindex="0">
+                              <div class="flex-container">
+                                <div id="topdecks" class="flex-child bar-chart">
+                                  <h4>Top 100 Decks</h4>
+                                  {{topdecks}}
+                                </div>
+                                <div id="worstdecks" class="flex-child bar-chart">
+                                  <h4>Worst 100 Decks</h4>
+                                  {{worstdecks}}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="horizontal-line"></div>
+                <div id="footer" style="tab-size: 4;">
+                    <pre>Clash Royale - Data Science Project     |     Kiel University     |     Sven G., Marten K., Philipp W.</pre>
+                </div>
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script>
+          $(function(){
+            $("#plot1").load("../plots/deckProperties_plot1.html");
+            $("#plot2").load("../plots/deckProperties_plot2.html");
+            $("#plot3").load("../plots/deckProperties_plot3.html");
+            $("#wincon").load("../plots/deckProperties_plot4.html");
+            $("#support").load("../plots/deckProperties_plot5.html");
+            $("#topsingle").load("../plots/deckProperties_plot6.html");
+            $("#worstsingle").load("../plots/deckProperties_plot7.html");
+            $("#toptwo").load("../plots/deckProperties_plot8.html");
+            $("#worsttwo").load("../plots/deckProperties_plot9.html");
+            $("#topthree").load("../plots/deckProperties_plot10.html");
+            $("#worstthree").load("../plots/deckProperties_plot11.html");
+            $("#topfour").load("../plots/deckProperties_plot12.html");
+            $("#worstfour").load("../plots/deckProperties_plot13.html");
+            $("#topfive").load("../plots/deckProperties_plot14.html");
+            $("#worstfive").load("../plots/deckProperties_plot15.html");
+            $("#topsix").load("../plots/deckProperties_plot16.html");
+            $("#worstsix").load("../plots/deckProperties_plot17.html");
+            $("#topseven").load("../plots/deckProperties_plot18.html");
+            $("#worstseven").load("../plots/deckProperties_plot19.html");
+            $("#topdecks").load("../plots/deckProperties_plot20.html");
+            $("#worstdecks").load("../plots/deckProperties_plot21.html");
+          });
+        </script>
+      </body>
+</html>
