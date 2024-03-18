@@ -12,7 +12,7 @@
           <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
             <span class="visually-hidden">Loading...</span>
           </div>
-          <p style="margin-left: 1%; margin-top: 10px;">Loading times may occur due to large plots. The content is displayed in a few seconds.</p>
+          <p style="margin-left: 1%; margin-top: 10px;">Loading times may occur due to large plots.</p>
         </div>
         <div id="container">
             <div id="topside">
@@ -22,7 +22,10 @@
                 <div id="menue">
                     <nav class="navbar bg-body-tertiary fixed-top">
                         <div class="container-fluid">
-                          <a class="navbar-brand" href="../index.html"><h4>Clash Royale - Data Science Project</h4></a>
+                          <a class="navbar-brand flex-container" href="../index.html">
+                            <img src="../img/logo.png" class="flex-child" style="width: 195px; height: 80px;">
+                            <h4 class="flex-child" style="margin-top: 20px;">Data Science Project</h4>
+                          </a>
                           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                           </button>
@@ -81,6 +84,7 @@
                                     <a class="nav-link">Marten K.</a>
                                     <a class="nav-link">Philipp W.</a>
                                     <a class="nav-link">Content was created as part of the Data Science project at Kiel University.</a>
+                                    <a class="nav-link" style="font-size: small;">Clash Royale Logo taken from flyclipart.com</a>
                                 </li>
                               </ul>
                             </div>
@@ -113,6 +117,11 @@
                         <!-- center-plot (for plots that are not to be shown across the full width) -->
                         <!-- fullwidth-plot (For plots that are to be shown across the full width) -->
                         <!-- ATTENTION: rq-plot has always to be a class of a plot div! -->
+                        <div id="plot1load" class="clearfix">
+                          <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                        </div>
                         <div id="plot1" class="rq-plot center-plot"></div>
                         <!-- End of graphic area -->
                     </div>
@@ -121,13 +130,12 @@
                         <div id="text2" class="rq-text">
                             <p>rq-text 2</p>
                         </div>
+                        <div id="plot2load" class="clearfix">
+                          <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                        </div>
                         <div id="plot2" class="rq-plot fullwidth-plot"></div>
-                    </div>
-                    <div id="plot-area3" class="plot-area">
-                      <div id="text3" class="rq-text">
-                          <p>rq-text 3</p>
-                      </div>
-                      <div id="plot3" class="rq-plot fullwidth-plot"></div>
                     </div>
                 </div>
                 <div class="horizontal-line"></div>

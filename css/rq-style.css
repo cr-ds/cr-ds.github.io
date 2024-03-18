@@ -11,12 +11,14 @@ h1 {
 
 h4 {
     font-weight: bold;
+    font-size: 30px;
 }
 
 #container{
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
+    margin: 125px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -95,7 +97,7 @@ h4 {
     font-size: large;
     font-weight: bolder;
 
-    margin-top: 25%;
+    margin-top: 115px;
     display: flex;
     justify-content: center;
 }

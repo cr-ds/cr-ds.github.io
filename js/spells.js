@@ -1,20 +1,26 @@
 $(function(){
-    $("#general").toggle();
-
     var loadedFilesCount = 0;
-    var totalFilesCount = 21;
+    var totalFilesCount = 3;
 
     function fileLoaded() {
         loadedFilesCount++;
         if (loadedFilesCount === totalFilesCount) {
             // All files loaded toggle view
             $("#loading").toggle();
-            $("#general").toggle();
         }
     }
 
     // At <NameOfScript> insert the name of the script you exported the plot as html from
-    $("#plot1").load("../plots/<NameOfScript>1.html", function() {
+    $("#plot1").load("../plots/spells_plot1.html", function() {
         fileLoaded();
+        $("#plot1load").toggle();
+    });
+    $("#plot2").load("../plots/spells_plot2.html", function() {
+        fileLoaded();
+        $("#plot2load").toggle();
+    });
+    $("#plot3").load("../plots/spells_plot3.html", function() {
+        fileLoaded();
+        $("#plot3load").toggle();
     });
 });

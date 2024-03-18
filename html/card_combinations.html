@@ -12,7 +12,7 @@
           <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
             <span class="visually-hidden">Loading...</span>
           </div>
-          <p style="margin-left: 1%; margin-top: 10px;">Loading times may occur due to large plots. The content is displayed in a few seconds.</p>
+          <p style="margin-left: 1%; margin-top: 10px;">Loading times may occur due to large plots.</p>
         </div>
         <div id="container">
             <div id="topside">
@@ -22,7 +22,10 @@
                 <div id="menue">
                     <nav class="navbar bg-body-tertiary fixed-top">
                         <div class="container-fluid">
-                          <a class="navbar-brand" href="../index.html"><h4>Clash Royale - Data Science Project</h4></a>
+                          <a class="navbar-brand flex-container" href="../index.html">
+                            <img src="../img/logo.png" class="flex-child" style="width: 195px; height: 80px;">
+                            <h4 class="flex-child" style="margin-top: 20px;">Data Science Project</h4>
+                          </a>
                           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                           </button>
@@ -81,6 +84,7 @@
                                     <a class="nav-link">Marten K.</a>
                                     <a class="nav-link">Philipp W.</a>
                                     <a class="nav-link">Content was created as part of the Data Science project at Kiel University.</a>
+                                    <a class="nav-link" style="font-size: small;">Clash Royale Logo taken from flyclipart.com</a>
                                 </li>
                               </ul>
                             </div>
@@ -113,6 +117,11 @@
                         <!-- center-plot (for plots that are not to be shown across the full width) -->
                         <!-- fullwidth-plot (For plots that are to be shown across the full width) -->
                         <!-- ATTENTION: rq-plot has always to be a class of a plot div! -->
+                        <div id="plot1load" class="clearfix">
+                          <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                        </div>
                         <div id="plot1" class="rq-plot center-plot"></div>
                         <!-- End of graphic area -->
                     </div>
@@ -121,11 +130,21 @@
                         <div id="text2" class="rq-text">
                             <p>rq-text 2</p>
                         </div>
+                        <div id="plot2load" class="clearfix">
+                          <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                        </div>
                         <div id="plot2" class="rq-plot fullwidth-plot"></div>
                     </div>
                     <div id="plot-area3" class="plot-area">
                       <div id="text3" class="rq-text">
-                          <p>rq-text 3</p>
+                          <p>Order: Meta > Cluster > Wincondition > Supportcard > Evolutions > Deck</p>
+                      </div>
+                      <div id="plot3load" class="clearfix">
+                        <div class="spinner-border" role="status">
+                          <span class="visually-hidden">Loading...</span>
+                        </div>
                       </div>
                       <div id="plot3" class="rq-plot fullwidth-plot"></div>
                     </div>
@@ -170,12 +189,22 @@
                             <div class="tab-pane fade show active" id="wincon-tab-pane" role="tabpanel" aria-labelledby="wincon-tab" tabindex="0">
                               <div class="bar-chart">
                                 <h4>Winconditions</h4>
+                                <div id="winconload" class="clearfix">
+                                  <div class="spinner-border" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                  </div>
+                                </div>
                                 <div id="wincon"></div>
                               </div>
                             </div>
                             <div class="tab-pane fade" id="support-tab-pane" role="tabpanel" aria-labelledby="support-tab" tabindex="0">
                               <div class="bar-chart">
                                 <h4>Support Cards</h4>
+                                <div id="supportload" class="clearfix">
+                                  <div class="spinner-border" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                  </div>
+                                </div>
                                 <div id="support"></div>
                               </div>
                             </div>
@@ -183,10 +212,20 @@
                               <div class="flex-container">
                                 <div class="flex-child bar-chart">
                                   <h4>Single Cards - Best to Worst</h4>
+                                  <div id="topsingleload" class="clearfix">
+                                    <div class="spinner-border" role="status">
+                                      <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                  </div>
                                   <div id="topsingle"></div>>
                                 </div>
                                 <div class="flex-child bar-chart">
                                   <h4>Single Cards - Worst to Best</h4>
+                                  <div id="worstsingleload" class="clearfix">
+                                    <div class="spinner-border" role="status">
+                                      <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                  </div>
                                   <div id="worstsingle"></div> 
                                 </div>
                               </div>
@@ -195,10 +234,20 @@
                               <div class="flex-container">
                                 <div class="flex-child bar-chart">
                                   <h4>Top 100 Two Card Combinations</h4>
+                                  <div id="toptwoload" class="clearfix">
+                                    <div class="spinner-border" role="status">
+                                      <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                  </div>
                                   <div id="toptwo"></div>
                                 </div>
                                 <div class="flex-child bar-chart">
                                   <h4>Worst 100 Two Card Combinations</h4>
+                                  <div id="worsttwoload" class="clearfix">
+                                    <div class="spinner-border" role="status">
+                                      <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                  </div>
                                   <div id="worsttwo"></div>
                                 </div>
                               </div>
@@ -207,10 +256,20 @@
                               <div class="flex-container">
                                 <div class="flex-child bar-chart">
                                   <h4>Top 100 Three Card Combinations</h4>
+                                  <div id="topthreeload" class="clearfix">
+                                    <div class="spinner-border" role="status">
+                                      <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                  </div>
                                   <div id="topthree"></div>
                                 </div>
                                 <div class="flex-child bar-chart">
                                   <h4>Worst 100 Three Card Combinations</h4>
+                                  <div id="worstthreeload" class="clearfix">
+                                    <div class="spinner-border" role="status">
+                                      <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                  </div>
                                   <div id="worstthree"></div>>
                                 </div>
                               </div>
@@ -219,10 +278,20 @@
                               <div class="flex-container">
                                 <div class="flex-child bar-chart">
                                   <h4>Top 100 Four Card Combinations</h4>
+                                  <div id="topfourload" class="clearfix">
+                                    <div class="spinner-border" role="status">
+                                      <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                  </div>
                                   <div id="topfour"></div>>
                                 </div>
                                 <div class="flex-child bar-chart">
                                   <h4>Worst 100 Four Card Combinations</h4>
+                                  <div id="worstfourload" class="clearfix">
+                                    <div class="spinner-border" role="status">
+                                      <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                  </div>
                                   <div id="worstfour"></div>>
                                 </div>
                               </div>
@@ -231,10 +300,20 @@
                               <div class="flex-container">
                                 <div class="flex-child bar-chart">
                                   <h4>Top 100 Five Card Combinations</h4>
+                                  <div id="topfiveload" class="clearfix">
+                                    <div class="spinner-border" role="status">
+                                      <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                  </div>
                                   <div id="topfive"></div>>
                                 </div>
                                 <div class="flex-child bar-chart">
                                   <h4>Worst 100 Five Card Combinations</h4>
+                                  <div id="worstfiveload" class="clearfix">
+                                    <div class="spinner-border" role="status">
+                                      <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                  </div>
                                   <div id="worstfive"></div>>
                                 </div>
                               </div>
@@ -243,10 +322,20 @@
                               <div class="flex-container">
                                 <div class="flex-child bar-chart">
                                   <h4>Top 100 Six Card Combinations</h4>
+                                  <div id="topsixload" class="clearfix">
+                                    <div class="spinner-border" role="status">
+                                      <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                  </div>
                                   <div id="topsix"></div>>
                                 </div>
                                 <div class="flex-child bar-chart">
                                   <h4>Worst 100 Six Card Combinations</h4>
+                                  <div id="worstsixload" class="clearfix">
+                                    <div class="spinner-border" role="status">
+                                      <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                  </div>
                                   <div id="worstsix"></div>>
                                 </div>
                               </div>
@@ -255,10 +344,20 @@
                               <div class="flex-container">
                                 <div class="flex-child bar-chart">
                                   <h4>Top 100 Seven Card Combinations</h4>
+                                  <div id="topsevenload" class="clearfix">
+                                    <div class="spinner-border" role="status">
+                                      <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                  </div>
                                   <div id="topseven"></div>>
                                 </div>
                                 <div class="flex-child bar-chart">
                                   <h4>Worst 100 Seven Card Combinations</h4>
+                                  <div id="worstsevenload" class="clearfix">
+                                    <div class="spinner-border" role="status">
+                                      <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                  </div>
                                   <div id="worstseven"></div>>
                                 </div>
                               </div>
@@ -267,10 +366,20 @@
                               <div class="flex-container">
                                 <div class="flex-child bar-chart">
                                   <h4>Top 100 Decks</h4>
+                                  <div id="topdecksload" class="clearfix">
+                                    <div class="spinner-border" role="status">
+                                      <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                  </div>
                                   <div id="topdecks"></div>>
                                 </div>
                                 <div class="flex-child bar-chart">
                                   <h4>Worst 100 Decks</h4>
+                                  <div id="worstdecksload" class="clearfix">
+                                    <div class="spinner-border" role="status">
+                                      <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                  </div>
                                   <div id="worstdecks"></div>
                                 </div>
                               </div>
