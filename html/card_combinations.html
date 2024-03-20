@@ -74,6 +74,9 @@
                                     <a class="nav-link" href="time.html">Times & Days</a>
                                 </li>
                                 <li class="nav-item">
+                                  <a class="nav-link" href="data.html">Data</a>
+                                </li>
+                                <li class="nav-item">
                                     <hr>
                                 </li>
                                 <li class="nav-item">
@@ -96,20 +99,126 @@
             <div id="general">
                 <div id="content">
                     <div id="boxheader">
-                        <h1>Research Question Headline</h1>
+                        <h1>Which card combinations are successful in the high Elo range?</h1>
                     </div>
                     <div class="horizontal-line"></div>
                     <!-- Begin of block for text and corresponding graphic -->
                     <div id="plot-area1" class="plot-area">
                         <!-- Begin of text area for a graphic -->
                         <div id="text1" class="rq-text">
-                            <h4>Headline</h4>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore 
-                                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-                                Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
-                                consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-                                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
-                                no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                            <h4>Clustering of Decks</h4>
+                            <p>
+                              There are 110 different cards to play with in Clash Royale. To examine the different cards used by the top players,
+                               we have rated all cards with 52 categories. These categories classify the cards into broader categories, such as 
+                               ground troops or air troops, and into more specific categories, such as the ability of a card to heal other cards. 
+                               To play with the cards, the player chooses 8 of these 110 cards and builds a deck with them.
+                            </p>
+                        </div>
+                        <div id="categories" class="container text-center">
+                          <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="font-weight: bolder; font-size: 18px;">
+                                  Show categories
+                                </button>
+                              </h2>
+                              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                  <div id="cat1" class="row row-cols-6 category-row">
+                                    <div class="col">Win Condition</div>
+                                    <div class="col">Small Spell</div>
+                                    <div class="col">Big Spell</div>
+                                    <div class="col">Mini Tank</div>
+                                    <div class="col">Big Tank</div>
+                                    <div class="col">Anti Ground Spam</div>
+                                  </div>
+                                  <div id="cat2" class="row row-cols-6 category-row">
+                                    <div class="col">Anti Ground Tank</div>
+                                    <div class="col">Anti Air Spam</div>
+                                    <div class="col">Anti Air Tank</div>
+                                    <div class="col">Building</div>
+                                    <div class="col">Siege Tower</div>
+                                    <div class="col">Spawner Building</div>
+                                  </div>
+                                  <div id="cat3" class="row row-cols-6 category-row">
+                                    <div class="col">Average Elixir</div>
+                                    <div class="col">Ground Troop</div>
+                                    <div class="col">Air Troop</div>
+                                    <div class="col">Low Elixir Cycle Card</div>
+                                    <div class="col">Charge Attack</div>
+                                    <div class="col">Reset Attack</div>
+                                  </div>
+                                  <div id="cat4" class="row row-cols-6 category-row">
+                                    <div class="col">Threat on Attack</div>
+                                    <div class="col">Threat on Defense</div>
+                                    <div class="col">Spawner Troop</div>
+                                    <div class="col">Swarm Troop</div>
+                                    <div class="col">Melee Long</div>
+                                    <div class="col">Melee Medium</div>
+                                  </div>
+                                  <div id="cat5" class="row row-cols-6 category-row">
+                                    <div class="col">Melee Short</div>
+                                    <div class="col">Range Combat</div>
+                                    <div class="col">Knockback Effect</div>
+                                    <div class="col">Heals</div>
+                                    <div class="col">Wincon Lava Hound</div>
+                                    <div class="col">Wincon Graveyard</div>
+                                  </div>
+                                  <div id="cat6" class="row row-cols-6 category-row">          
+                                    <div class="col">Wincon Ram Rider</div>
+                                    <div class="col">Wincon Miner</div>
+                                    <div class="col">Wincon Golem</div>
+                                    <div class="col">Wincon Electro Giant</div>
+                                    <div class="col">Wincon X-Bow</div>
+                                    <div class="col">Wincon Goblin Giant</div>
+                                  </div>
+                                  <div id="cat7" class="row row-cols-6 category-row">
+                                    <div class="col">Wincon Balloon</div>
+                                    <div class="col">Wincon Goblin Drill</div>
+                                    <div class="col">Wincon Goblin Barrel</div>
+                                    <div class="col">Wincon Wall Breakers</div>
+                                    <div class="col">Wincon Royal Hogs</div>
+                                    <div class="col">Wincon Giant</div>
+                                  </div>
+                                  <div id="cat8" class="row row-cols-6 category-row">
+                                    <div class="col">Wincon Hog Rider</div>
+                                    <div class="col">Wincon Battle Ram</div>
+                                    <div class="col">Wincon Elixir Golem</div>
+                                    <div class="col">Wincon Royal Giant</div>
+                                    <div class="col">Wincon Mortar</div>
+                                    <div class="col">Wincon Skeleton Barrel</div>
+                                  </div>
+                                  <div id="cat9" class="row row-cols-6 category-row">
+                                    <div class="col">Wincon Three Musketeers</div>
+                                    <div class="col">Support Card is Cannoneer</div>
+                                    <div class="col">Evolution Card Quantity</div>
+                                    <div class="col">Punishment for Spending Elixir</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="rq-text">
+                          <p>
+                            The values of the individual categories of the cards in a deck are then used to calculate the category values for the deck. 
+                            The resulting 52-dimensional category vector that describes the deck is then normalized so that there is an equal 
+                            relationship between all values. We can then use these category vectors to determine the similarity of different decks. 
+                            To visualize this, we reduce the vector to two dimensions using PCA.
+                          </p>
+                          <br>
+                          <p>
+                            We then divide the dimension-reduced category vectors of the individual decks into 10 different clusters using the k-Means 
+                            algorithm.The decks that are similar to each other are located within these clusters.
+                          </p>
+                          <br>
+                          <p>
+                            In the following scatter plot, the different decks are shown as so-called 'bubbles'. A bubble is larger the more battles 
+                            occur in our data with this deck. The plot also provides the option of filtering by the number of battles fought. In the 
+                            opinion of the investigators, a deck can only be rated well if it has at least 100 battles. By hovering over the bubbles, 
+                            you can display the deck, the win conditions used, the evolutions used and the support card. It also shows the win rate, 
+                            which is seen as decisive for the value of a deck.
+                          </p>
                         </div>
                         <!-- End of text area for a graphic -->
                         <!-- Begin of graphic area: for each graphic own placeholder name such as fig1 -->
@@ -128,7 +237,16 @@
                     <!-- End of block for text and corresponding graphic -->
                     <div id="plot-area2" class="plot-area">
                         <div id="text2" class="rq-text">
-                            <p>rq-text 2</p>
+                            <h4>Win Rates of Clusters</h4>
+                            <p>
+                              To find out which deck types, i.e. which cluster contains the most promising decks, we examine the correlation 
+                              between the individual clusters and the win rate of the decks in them. Of interest here is the median of the 
+                              win rates of all decks in a cluster. If we look at all decks with at least 100 battles, we get the information 
+                              that cluster 4 contains the most promising decks with a median win rate of 62.68%. If we restrict this further 
+                              to decks with at least 1000 battles, cluster 9 is now the cluster with the best win rate. However, in this case 
+                              there is also only one deck in cluster 9. Cluster 4 now has the second best median win rate, 
+                              but with nine different decks.
+                            </p>
                         </div>
                         <div id="plot2load" class="clearfix">
                           <div class="spinner-border" role="status">
@@ -139,18 +257,66 @@
                     </div>
                     <div id="plot-area3" class="plot-area">
                       <div id="text3" class="rq-text">
-                          <p>Order: Meta > Cluster > Wincondition > Supportcard > Evolutions > Deck</p>
+                          <h4>Specific Decks</h4>
+                          <p>
+                            We now know which decks are similar to each other and which clusters are the most promising depending on the minimum 
+                            battle count. To be able to take a look at the specific decks of the clusters, we display this using a treemap. 
+                            This includes the decks of all battles of a certain selected minimum number of battles. The treemap is structured in 
+                            such a way that the meta, i.e. all decks in the filter setting, forms the root. However, since the distinction does not only 
+                            consist of 8 different cards, but also of a support card and the possibility that up to two cards of the 8 deck cards are 
+                            an evolution, we have to differentiate further. The meta then splits down into the 10 clusters. Within the 10 clusters it is 
+                            then divided according to the win conditions. Win conditions are cards that are 
+                            particularly responsible for destroying enemy towers and thus for victory. At the next level, we subdivide according to 
+                            the support card. This is the card that stands on your own towers and defends them. Here you can choose between the tower 
+                            princess and the cannoneer. The last level before the actual decks is the differentiation between the evolutions used. 
+                            The explanation of what evolutions are can be found <a href="evos.html">here</a>. Finally, the specific decks remain as leaves. 
+                            These leaves contain information about the deck, the evolutions used, the support card used and the win conditions used. 
+                            They also contain the number of recorded battles that were carried out with this combination of cards and the associated win rate.
+                          </p>
+                          <br>
+                          <p>
+                            Based on the information when hovering over the meta area, we can see that a total of 245,167 battles were recorded from decks 
+                            with over 100 battles. If we compare this with the 482,006 different battles mentioned on the <a href="data.html">data page</a>
+                            of the cleaned data, we see that almost 236,839 battles were played by decks that had less than 100 battles. For performance 
+                            reasons, we unfortunately had to remove the filter setting of the Treemap to view the data with all recorded decks without 
+                            restriction by a minimum number of battles. The size of the leaves and nodes of the treemap are based on the number of fights 
+                            added up at the node. The treemap now allows us to see, for example, that in cluster 4, the most promising cluster, the Hog Rider 
+                            is the most played win condition. This is then most often played with the Tower Princess as a support card and most often uses 
+                            the Knight and Firecracker as evolutions. With this restriction, there are still 20 different decks played in the cluster, 
+                            all of which have win rates of at least 50%.
+                          </p>
+                          <p>
+                            Order of the nodes: Meta -> Cluster -> Win Condition -> Support Card -> Evolutions -> Deck
+                          </p>
                       </div>
                       <div id="plot3load" class="clearfix">
                         <div class="spinner-border" role="status">
                           <span class="visually-hidden">Loading...</span>
                         </div>
-                      </div>
+                      </div>   
                       <div id="plot3" class="rq-plot fullwidth-plot"></div>
                     </div>
                     <div id="plot-area4" class="plot-area">
                       <div id="text4" class="rq-text">
-                          <p>rq-text 4</p>
+                          <h4>Cards, Combinations, and their Win Rates</h4>
+                          <p>
+                            In addition to the decks of the various clusters, it is of course also interesting to look at the cards and combinations 
+                            of these in general. For this purpose, we looked at the average win rates of the individual cards in all recorded decks 
+                            with at least 100 battles. This is shown in the following bar charts for win conditions, support cards and individual cards, 
+                            as well as for two-, three-, four-, five-, six-, seven- and eight-card combinations. As there are far more than 100 different 
+                            possible combinations, we only look at the best and worst 100 for all categories except win conditions, support cards and 
+                            individual cards.
+                          </p>
+                          <br>
+                          <p>
+                            This resulted in, for example, the Graveyard being the best win condition, closely followed by the Three Musketeers. 
+                            However, it is important to note that the Graveyard was played more than 25,000 times, while the Three Musketeers was only 
+                            played just over 2,000 times. It is also interesting to see that the Heal Spirit is the card with the highest win rate, 
+                            although this should come as a relative surprise to those in the know. If you look at the number of battles, you can see that 
+                            the Heal Spirit has only been played just over 1000 times. If we then add to this the fact that we are only looking at the best 
+                            players in Germany, then it is quite possible that a card achieves a very good win rate in relatively few games, even though the 
+                            card may not be that good in general.
+                          </p>
                       </div>
                       <div id="plot4" class="rq-plot left-align">
                           <ul class="nav nav-tabs" id="myTab" role="tablist">

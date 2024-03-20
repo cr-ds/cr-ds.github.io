@@ -10,6 +10,18 @@ $(function(){
         }
     }
 
+    if ($(window).width() < 1228) {
+        $( "#cat1" ).removeClass( "row-cols-6" ).addClass( "row-cols-1" );
+        $( "#cat2" ).removeClass( "row-cols-6" ).addClass( "row-cols-1" );
+        $( "#cat3" ).removeClass( "row-cols-6" ).addClass( "row-cols-1" );
+        $( "#cat4" ).removeClass( "row-cols-6" ).addClass( "row-cols-1" );
+        $( "#cat5" ).removeClass( "row-cols-6" ).addClass( "row-cols-1" );
+        $( "#cat6" ).removeClass( "row-cols-6" ).addClass( "row-cols-1" );
+        $( "#cat7" ).removeClass( "row-cols-6" ).addClass( "row-cols-1" );
+        $( "#cat8" ).removeClass( "row-cols-6" ).addClass( "row-cols-1" );
+        $( "#cat9" ).removeClass( "row-cols-6" ).addClass( "row-cols-1" );
+    };
+
     $("#plot1").load("../plots/deckProperties_plot1.html", function() {
         fileLoaded();
         $("#plot1load").toggle();
@@ -94,4 +106,31 @@ $(function(){
         fileLoaded();
         $("#worstdecksload").toggle();
     });
+
+
 });
+
+$(window).resize(function() {
+    if ($(window).width() < 1228) {
+      $( "#cat1" ).removeClass( "row-cols-6" ).addClass( "row-cols-1" );
+      $( "#cat2" ).removeClass( "row-cols-6" ).addClass( "row-cols-1" );
+      $( "#cat3" ).removeClass( "row-cols-6" ).addClass( "row-cols-1" );
+      $( "#cat4" ).removeClass( "row-cols-6" ).addClass( "row-cols-1" );
+      $( "#cat5" ).removeClass( "row-cols-6" ).addClass( "row-cols-1" );
+      $( "#cat6" ).removeClass( "row-cols-6" ).addClass( "row-cols-1" );
+      $( "#cat7" ).removeClass( "row-cols-6" ).addClass( "row-cols-1" );
+      $( "#cat8" ).removeClass( "row-cols-6" ).addClass( "row-cols-1" );
+      $( "#cat9" ).removeClass( "row-cols-6" ).addClass( "row-cols-1" );
+    };
+    if ($(window).width() >= 1228) {
+        $( "#cat1" ).removeClass( "row-cols-1" ).addClass( "row-cols-6" );
+        $( "#cat2" ).removeClass( "row-cols-1" ).addClass( "row-cols-6" );
+        $( "#cat3" ).removeClass( "row-cols-1" ).addClass( "row-cols-6" );
+        $( "#cat4" ).removeClass( "row-cols-1" ).addClass( "row-cols-6" );
+        $( "#cat5" ).removeClass( "row-cols-1" ).addClass( "row-cols-6" );
+        $( "#cat6" ).removeClass( "row-cols-1" ).addClass( "row-cols-6" );
+        $( "#cat7" ).removeClass( "row-cols-1" ).addClass( "row-cols-6" );
+        $( "#cat8" ).removeClass( "row-cols-1" ).addClass( "row-cols-6" );
+        $( "#cat9" ).removeClass( "row-cols-1" ).addClass( "row-cols-6" );
+      }
+  });

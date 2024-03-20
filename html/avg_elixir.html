@@ -74,6 +74,9 @@
                                     <a class="nav-link" href="time.html">Times & Days</a>
                                 </li>
                                 <li class="nav-item">
+                                  <a class="nav-link" href="data.html">Data</a>
+                                </li>
+                                <li class="nav-item">
                                     <hr>
                                 </li>
                                 <li class="nav-item">
@@ -96,20 +99,32 @@
             <div id="general">
                 <div id="content">
                     <div id="boxheader">
-                        <h1>Research Question Headline</h1>
+                        <h1>What influence does the average elixir cost have on the win rate?</h1>
                     </div>
                     <div class="horizontal-line"></div>
                     <!-- Begin of block for text and corresponding graphic -->
                     <div id="plot-area1" class="plot-area">
                         <!-- Begin of text area for a graphic -->
                         <div id="text1" class="rq-text">
-                            <h4>Headline</h4>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore 
-                                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-                                Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
-                                consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-                                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
-                                no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                            <h4>Avergae elixir cost for a deck and its win rate</h4>
+                            <p>
+                              In Clash Royale, elixir is a crucial resource that can make the difference between victory and defeat.
+                              The average elixir cost of a deck is calculated by dividing the sum of the elixir costs of all cards
+                              in the deck by the number of cards in the deck. A lower average means that the deck tends to be faster
+                              and players can react more quickly to enemy attacks. A higher average, on the other hand, means that
+                              players can use stronger units or spells, but they take longer to accumulate elixir.
+                              Thus, the choice of average elixir cost depends on the player's style of play.
+                              In the following, we will look at which average elixir costs are most profitable. 
+                            </p>
+                            <br>
+                            <p>
+                              The boxplot shows the correlation between the average elixir cost of a deck and its win rate.
+                              We have limited the decks for which there are at least 100 battles in the dataset, 
+                              as in the opinion of the testers a deck can only be rated well if it has at least 100 battles.
+                              The average win rate is around 58%. Decks with 2.8 average elixirs have the best win rate (median ~64%).
+                              The average elixir costs per deck range from 2.2 to 5.4 elixir. Decks with 2.6, 2.8, 3.4, 4.5, 4.6 and
+                              5.4 average elixir have a win rate of over 60% and decks with 4.8 and 5 average elixir have a win rate of under 50%.
+                            </p>
                         </div>
                         <!-- End of text area for a graphic -->
                         <!-- Begin of graphic area: for each graphic own placeholder name such as fig1 -->
@@ -128,7 +143,12 @@
                     <!-- End of block for text and corresponding graphic -->
                     <div id="plot-area2" class="plot-area">
                         <div id="text2" class="rq-text">
-                            <p>rq-text 2</p>
+                          <h4>Average elixir costs of decks for win conditions and their win rate</h4>
+                          <p>
+                            Win conditions are cards that are particularly responsible for destroying enemy towers and thus for victory.
+                            Here you can select a win condition in the legend to see the average elixir cost of decks with this win condition and 
+                            what win rate they have.
+                          </p>
                         </div>
                         <div id="plot2load" class="clearfix">
                           <div class="spinner-border" role="status">

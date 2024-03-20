@@ -74,6 +74,9 @@
                                     <a class="nav-link" href="time.html">Times & Days</a>
                                 </li>
                                 <li class="nav-item">
+                                  <a class="nav-link" href="data.html">Data</a>
+                                </li>
+                                <li class="nav-item">
                                     <hr>
                                 </li>
                                 <li class="nav-item">
@@ -137,16 +140,114 @@
                         </div>
                         <div id="plot2" class="rq-plot fullwidth-plot"></div>
                     </div>
-                    <div id="plot-area3" class="plot-area">
+                    <div id="plot-area3" class="plot-area" style="min-height: 500;">
                       <div id="text3" class="rq-text">
                           <p>rq-text 3</p>
                       </div>
-                      <div id="plot3load" class="clearfix">
-                        <div class="spinner-border" role="status">
-                          <span class="visually-hidden">Loading...</span>
-                        </div>
+                      <div id="plot3" class="rq-plot left-align">
+                          <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active toggler" id="monday-tab" data-bs-toggle="tab" data-bs-target="#monday-tab-pane" type="button" role="tab" aria-controls="monday-tab-pane" aria-selected="true">Monday</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link toggler" id="tuesday-tab" data-bs-toggle="tab" data-bs-target="#tuesday-tab-pane" type="button" role="tab" aria-controls="tuesday-tab-pane" aria-selected="false">Tuesday</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link toggler" id="wednesday-tab" data-bs-toggle="tab" data-bs-target="#wednesday-tab-pane" type="button" role="tab" aria-controls="wednesday-tab-pane" aria-selected="false">Wednesday</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link toggler" id="thursday-tab" data-bs-toggle="tab" data-bs-target="#thursday-tab-pane" type="button" role="tab" aria-controls="thursday-tab-pane" aria-selected="false">Thursday</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link toggler" id="friday-tab" data-bs-toggle="tab" data-bs-target="#friday-tab-pane" type="button" role="tab" aria-controls="friday-tab-pane" aria-selected="false">Friday</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link toggler" id="saturday-tab" data-bs-toggle="tab" data-bs-target="#saturday-tab-pane" type="button" role="tab" aria-controls="saturday-tab-pane" aria-selected="false">Saturday</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link toggler" id="sunday-tab" data-bs-toggle="tab" data-bs-target="#sunday-tab-pane" type="button" role="tab" aria-controls="sunday-tab-pane" aria-selected="false">Sunday</button>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="monday-tab-pane" role="tabpanel" aria-labelledby="monday-tab" tabindex="0">
+                              <div class="bar-chart-time">
+                                <h4>Win rate per day and hour</h4>
+                                <div id="mondayload" class="clearfix">
+                                  <div class="spinner-border" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                  </div>
+                                </div>
+                                <div id="monday"></div>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="tuesday-tab-pane" role="tabpanel" aria-labelledby="tuesday-tab" tabindex="0">
+                              <div class="bar-chart-time">
+                                <h4>Win rate per day and hour</h4>
+                                <div id="tuesdayload" class="clearfix">
+                                  <div class="spinner-border" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                  </div>
+                                </div>
+                                <div id="tuesday"></div>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="wednesday-tab-pane" role="tabpanel" aria-labelledby="wednesday-tab" tabindex="0">
+                              <div class="bar-chart-time">
+                                <h4>Win rate per day and hour</h4>
+                                <div id="wednesdayload" class="clearfix">
+                                  <div class="spinner-border" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                  </div>
+                                </div>
+                                <div id="wednesday"></div>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="thursday-tab-pane" role="tabpanel" aria-labelledby="thursday-tab" tabindex="0">
+                              <div class="bar-chart-time">
+                                <h4>Win rate per day and hour</h4>
+                                <div id="thursdayload" class="clearfix">
+                                  <div class="spinner-border" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                  </div>
+                                </div>
+                                <div id="thursday"></div>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="friday-tab-pane" role="tabpanel" aria-labelledby="friday-tab" tabindex="0">
+                              <div class="bar-chart-time">
+                                <h4>Win rate per day and hour</h4>
+                                <div id="fridayload" class="clearfix">
+                                  <div class="spinner-border" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                  </div>
+                                </div>
+                                <div id="friday"></div>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="saturday-tab-pane" role="tabpanel" aria-labelledby="saturday-tab" tabindex="0">
+                              <div class="bar-chart-time">
+                                <h4>Win rate per day and hour</h4>
+                                <div id="saturdayload" class="clearfix">
+                                  <div class="spinner-border" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                  </div>
+                                </div>
+                                <div id="saturday"></div>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="sunday-tab-pane" role="tabpanel" aria-labelledby="sunday-tab" tabindex="0">
+                              <div class="bar-chart-time">
+                                <h4>Win rate per day and hour</h4>
+                                <div id="sundayload" class="clearfix">
+                                  <div class="spinner-border" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                  </div>
+                                </div>
+                                <div id="sunday"></div>
+                              </div>
+                            </div>                            
+                          </div>
                       </div>
-                      <div id="plot3" class="rq-plot fullwidth-plot"></div>
                     </div>
                 </div>
                 <div class="horizontal-line"></div>
