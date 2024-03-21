@@ -99,20 +99,39 @@
             <div id="general">
                 <div id="content">
                     <div id="boxheader">
-                        <h1>Research Question Headline</h1>
+                        <h1>How relevant is the use of spells and the corresponding number in the deck?</h1>
                     </div>
                     <div class="horizontal-line"></div>
                     <!-- Begin of block for text and corresponding graphic -->
                     <div id="plot-area1" class="plot-area">
                         <!-- Begin of text area for a graphic -->
                         <div id="text1" class="rq-text">
-                            <h4>Headline</h4>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore 
-                                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-                                Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
-                                consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-                                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
-                                no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                            <h4>Number of Spells per Deck and their Win Rate</h4>
+                            <p>In Clash Royale, spells play a crucial role in controlling the battlefield. 
+                              There are a variety of spells, which are divided into two main categories 
+                              based on elixir cost: big and small spells. Big spells have a higher damage effect 
+                              but also cost more elixir. Furthermore, spells have different properties such as knockback or 
+                              reset effects. The choice between big and small spells often depends on 
+                              the player's game strategy and preferred tactics.
+                              The influence of the number of spells on the win rate is analyzed below.
+                            </p>
+                            <br>
+                            <p>
+                              For this purpose, the battles with identical deck setups are summarized and their win rate calculated. 
+                              Identical deck setups means that the same eight cards and evo cards as well as the same support card are used. 
+                              This is shown in a violin plot in which the number of battles and their win rate are plotted. 
+                              The width of the violins indicates the number of battles. We have limited the decks for which there are at least 100 battles in the dataset, 
+                              as in the opinion of the investigators a deck can only be rated well if it has at least 100 battles. 
+                              The following results can be derived from this:
+                              Decks with four spells have the best win rate with a median of 63.11%.
+                              Decks with no spells have the worst win rate and decks with more than four spells are not played at all.
+                              Decks with one, two and three spells have similar win rates with medians of 56.67%, 59.47% and 58.18%.
+                              With regard to the research question, it can be stated that the relevance of the use of spell cards in decks is high.
+                            </p>
+                            <br>
+                            <p>
+                              For more details, a distinction can be made interactively between the total number of spells and small and big spells.
+                            </p>
                         </div>
                         <!-- End of text area for a graphic -->
                         <!-- Begin of graphic area: for each graphic own placeholder name such as fig1 -->
@@ -131,18 +150,39 @@
                     <!-- End of block for text and corresponding graphic -->
                     <div id="plot-area2" class="plot-area">
                         <div id="text2" class="rq-text">
-                            <p>rq-text 2</p>
+                          <h4>Spells and their Category, Play Rate and Win Rate</h4>
+                          <p>
+                            To have a closer look at the distribution of the play rate of spells and their win rate 
+                            we have created an interactive sunburst plot. In this plot, all spells are divided 
+                            into three categories. The third category describes a special card, the Mirror, 
+                            which mirrors the previously played card and thus has its own category.
+                          </p>
+                          <br>
+                          <p>
+                            It is noticeable that the majority of the spells used are small spells. Particularly promising spells with 
+                            win rates above 58.5% are The Log, Barbarian Barrel, Earthquake, Giant Snowball and the Graveyard.
+                          </p>
+                          <br>
+                          <p>
+                            For those who are particularly curious, there is the option to filter by the number of spells per deck. 
+                            With four spells per deck, it appears to be the infamous “Splashyard” deck.
+                          </p>
                         </div>
                         <div id="plot2load" class="clearfix">
                           <div class="spinner-border" role="status">
                             <span class="visually-hidden">Loading...</span>
                           </div>
                         </div>
-                        <div id="plot2" class="rq-plot fullwidth-plot"></div>
+                        <div id="plot2" class="rq-plot center-plot"></div>
                     </div>
                     <div id="plot-area3" class="plot-area">
                       <div id="text3" class="rq-text">
-                          <p>rq-text 3</p>
+                        <h4>Spells and their Properties</h4>
+                        <p>
+                          To take a closer look at the spell properties, we created a treemap. 
+                          In this, the spell property, spell category and the spell name can be examined in descending order. 
+                          The size of the fields describes the number of battles for the respective spell.
+                        </p>
                       </div>
                       <div id="plot3load" class="clearfix">
                         <div class="spinner-border" role="status">

@@ -99,20 +99,36 @@
             <div id="general">
                 <div id="content">
                     <div id="boxheader">
-                        <h1>Research Question Headline</h1>
+                        <h1>How relevant is the use and the corresponding number of building cards in the deck?</h1>
                     </div>
                     <div class="horizontal-line"></div>
                     <!-- Begin of block for text and corresponding graphic -->
                     <div id="plot-area1" class="plot-area">
                         <!-- Begin of text area for a graphic -->
                         <div id="text1" class="rq-text">
-                            <h4>Headline</h4>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore 
-                                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-                                Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
-                                consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-                                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
-                                no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                            <h4>Number of Buildings</h4>
+                            <p>
+                              There are different types of cards in Clash Royale. One of these card types is buildings. 
+                              Buildings are cards that can be placed in a stationary position on the playing field and perform defense 
+                              or offense actions depending on the card. When building a deck, the player is not limited to the number of
+                              buildings in the deck. It is therefore possible to build a deck without buildings, but also with one, 
+                              two or three buildings. It is therefore interesting to know whether there is an influence of the number 
+                              of buildings on the win rate and what influence this has.
+                            </p>
+                            <br>
+                            <p>
+                              To answer this question, we have presented an overview of the win rate in relation to the number of buildings 
+                              used for all decks with at least 10 battles in the following violin plot. We have filtered for at least 10 battles here, 
+                              as we did not want to include one-off outliers that were tested for fun in the analysis. The violin plot shows that 
+                              decks with one building have the best median win rate of 60.71%. Decks with three buildings, on the other hand, perform 
+                              the worst with a median win rate of 35.71%. Decks with no or two buildings have a median win rate of 58.33% and 56.04% 
+                              respectively. The filter also shows that in a serious number of games there are no decks that use more than three buildings.
+                            </p>
+                            <br>
+                            <p>
+                              Based on these results, it can be said that the number of buildings is definitely relevant for the win rate. 
+                              However, this relevance is not particularly high.
+                            </p>
                         </div>
                         <!-- End of text area for a graphic -->
                         <!-- Begin of graphic area: for each graphic own placeholder name such as fig1 -->
@@ -131,14 +147,36 @@
                     <!-- End of block for text and corresponding graphic -->
                     <div id="plot-area2" class="plot-area">
                         <div id="text2" class="rq-text">
-                            <p>rq-text 2</p>
+                          <h4>Specific Buildings</h4>
+                            <p>
+                              As previously mentioned, there are also more precise distinctions to consider when it comes to buildings. 
+                              We distinguish between siege towers, defensive buildings and spawner buildings. A siege tower is a building 
+                              that actively attacks the enemy's towers. A spawner building is a building that places troop units on the playing 
+                              field at certain time intervals and a defensive building is a building that is used to defend your own towers.
+                            </p>
+                            <br>
+                            <p>
+                              In the following Sunburst graphic, we show the individual buildings depending on their building type. 
+                              The size of the building segment in the graphic depends on the battles played with it. We use a color scale 
+                              to show the win rate with this building. Both the number of battles and the win rate can also be displayed by 
+                              hovering over the building. By selecting a building type, the view can be changed so that only the buildings of 
+                              this type are displayed. Furthermore, we offer the option of filtering the view to the evaluations of decks with one, 
+                              two or three buildings.
+                            </p>
+                            <br>
+                            <p>
+                              For example, if we look at the graph for decks with one building, i.e. the number of buildings with the highest win rate, 
+                              we can see that the Tesla is played the most and has a win rate of 56.17%. The Bomb Tower, on the other hand, has almost 
+                              20,000 fewer battles in the evaluation, but has a win rate of 60.04%. So it's not just the number of buildings in decks 
+                              that matters, but also the specific buildings themselves.
+                            </p>
                         </div>
                         <div id="plot2load" class="clearfix">
                           <div class="spinner-border" role="status">
                             <span class="visually-hidden">Loading...</span>
                           </div>
                         </div>
-                        <div id="plot2" class="rq-plot fullwidth-plot"></div>
+                        <div id="plot2" class="rq-plot center-plot"></div>
                     </div>                    
                 </div>
                 <div class="horizontal-line"></div>

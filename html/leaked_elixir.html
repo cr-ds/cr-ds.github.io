@@ -99,20 +99,30 @@
             <div id="general">
                 <div id="content">
                     <div id="boxheader">
-                        <h1>Research Question Headline</h1>
+                        <h1>How much influence does the leaked elixir have on the win rate?</h1>
                     </div>
                     <div class="horizontal-line"></div>
                     <!-- Begin of block for text and corresponding graphic -->
                     <div id="plot-area1" class="plot-area">
                         <!-- Begin of text area for a graphic -->
                         <div id="text1" class="rq-text">
-                            <h4>Headline</h4>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore 
-                                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-                                Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
-                                consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-                                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
-                                no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                            <h4>Leaked Elixir and its Win Rate</h4>
+                            <p>Elixir is used to play troop, building and spell cards. The management of elixir 
+                              is therefore decisive for victory in the game, so players must take the elixir costs into account.
+                              Elixir regenerates during the game up to a maximum of ten. If no card is played at this maximum, 
+                              the elixir leaked, which is tracked by Clash Royale. In the following, this leaked elixir will be 
+                              analysed in correlation to the win rate.
+                            </p>
+                            <br>
+                            <p>
+                              For this purpose, battles with the same elixir are summarized and their win rate calculated. 
+                              This is shown in a scatterplot in which the battles and their win rate are plotted. 
+                              The size of the bubbles indicates the number of battles. Locally Weighted Scatterplot Smoothing 
+                              was used for further analysis. The following results can be determined from this:
+                              In general, the more elixir you leak, the worse your win rate will be.
+                              Up to 2.8 leaked elixir the win rate is over 62%.
+                              From 7.4 leaked elixir your win rate is below 50% and a linear trend can be recognised.
+                            </p>
                         </div>
                         <!-- End of text area for a graphic -->
                         <!-- Begin of graphic area: for each graphic own placeholder name such as fig1 -->
@@ -131,14 +141,19 @@
                     <!-- End of block for text and corresponding graphic -->
                     <div id="plot-area2" class="plot-area">
                         <div id="text2" class="rq-text">
-                            <p>rq-text 2</p>
+                          <h4>Interactive Selection of Minimum Battles for Leaked Elixir Costs of Battles and their Win Rate</h4>
+                          <p>
+                            Here you can select a minimum number of battles for which the graphic should be displayed. 
+                            In addition, an Ordinary Least Squares trend line is displayed, which also shows that 
+                            the more elixir you leak, the worse your win rate will be.
+                          </p>
                         </div>
                         <div id="plot2load" class="clearfix">
                           <div class="spinner-border" role="status">
                             <span class="visually-hidden">Loading...</span>
                           </div>
                         </div>
-                        <div id="plot2" class="rq-plot fullwidth-plot"></div>
+                        <div id="plot2" class="rq-plot center-plot"></div>
                     </div>
                 </div>
                 <div class="horizontal-line"></div>

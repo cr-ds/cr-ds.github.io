@@ -201,14 +201,14 @@
                         </div>
                         <div class="rq-text">
                           <p>
-                            The values of the individual categories of the cards in a deck are then used to calculate the category values for the deck. 
+                            The values of the individual categories of the cards in a deck are used to calculate the category values for the deck. 
                             The resulting 52-dimensional category vector that describes the deck is then normalized so that there is an equal 
-                            relationship between all values. We can then use these category vectors to determine the similarity of different decks. 
+                            relationship between all values. We can use these category vectors to determine the similarity of different decks. 
                             To visualize this, we reduce the vector to two dimensions using PCA.
                           </p>
                           <br>
                           <p>
-                            We then divide the dimension-reduced category vectors of the individual decks into 10 different clusters using the k-Means 
+                            Next, we divide the dimension-reduced category vectors of the individual decks into 10 different clusters using the k-Means 
                             algorithm.The decks that are similar to each other are located within these clusters.
                           </p>
                           <br>
@@ -240,8 +240,8 @@
                             <h4>Win Rates of Clusters</h4>
                             <p>
                               To find out which deck types, i.e. which cluster contains the most promising decks, we examine the correlation 
-                              between the individual clusters and the win rate of the decks in them. Of interest here is the median of the 
-                              win rates of all decks in a cluster. If we look at all decks with at least 100 battles, we get the information 
+                              between the individual clusters and the win rate of the decks in them. To compare the win rate of the clusters 
+                              we compare the median of the win rates of all decks in a cluster. If we look at all decks with at least 100 battles, we get the information 
                               that cluster 4 contains the most promising decks with a median win rate of 62.68%. If we restrict this further 
                               to decks with at least 1000 battles, cluster 9 is now the cluster with the best win rate. However, in this case 
                               there is also only one deck in cluster 9. Cluster 4 now has the second best median win rate, 
@@ -264,7 +264,7 @@
                             This includes the decks of all battles of a certain selected minimum number of battles. The treemap is structured in 
                             such a way that the meta, i.e. all decks in the filter setting, forms the root. However, since the distinction does not only 
                             consist of 8 different cards, but also of a support card and the possibility that up to two cards of the 8 deck cards are 
-                            an evolution, we have to differentiate further. The meta then splits down into the 10 clusters. Within the 10 clusters it is 
+                            an evolution, we have to differentiate further. The meta splits down into the 10 clusters. Within the 10 clusters it is 
                             then divided according to the win conditions. Win conditions are cards that are 
                             particularly responsible for destroying enemy towers and thus for victory. At the next level, we subdivide according to 
                             the support card. This is the card that stands on your own towers and defends them. Here you can choose between the tower 
@@ -313,9 +313,19 @@
                             However, it is important to note that the Graveyard was played more than 25,000 times, while the Three Musketeers was only 
                             played just over 2,000 times. It is also interesting to see that the Heal Spirit is the card with the highest win rate, 
                             although this should come as a relative surprise to those in the know. If you look at the number of battles, you can see that 
-                            the Heal Spirit has only been played just over 1000 times. If we then add to this the fact that we are only looking at the best 
+                            the Heal Spirit has only been played just over 1000 times. If we add to this the fact that we are only looking at the best 
                             players in Germany, then it is quite possible that a card achieves a very good win rate in relatively few games, even though the 
                             card may not be that good in general.
+                          </p>
+                          <br>
+                          <p>
+                            It should also be mentioned that the three-, four-, five-, six- and seven-card combinations often have the same number of 
+                            battles and the same win rate in succession. This is due to the fact that these decks have been played less, but have often 
+                            won in these few games. As previously mentioned, this results in a distortion due to the exclusive consideration of the top 
+                            players in Germany. All combinations of the eight deck cards from this deck are then displayed in the respective diagrams. 
+                            This means that for such a deck there can be up to eight different combinations with the same number of battles and the same 
+                            win rate for the seven-card combinations. However, there can also be fewer if certain combinations also occur in other decks. 
+                            However, the win rate then tends to decrease.
                           </p>
                       </div>
                       <div id="plot4" class="rq-plot left-align">
@@ -383,7 +393,7 @@
                                       <span class="visually-hidden">Loading...</span>
                                     </div>
                                   </div>
-                                  <div id="topsingle"></div>>
+                                  <div id="topsingle"></div>
                                 </div>
                                 <div class="flex-child bar-chart">
                                   <h4>Single Cards - Worst to Best</h4>
@@ -436,7 +446,7 @@
                                       <span class="visually-hidden">Loading...</span>
                                     </div>
                                   </div>
-                                  <div id="worstthree"></div>>
+                                  <div id="worstthree"></div>
                                 </div>
                               </div>
                             </div>
@@ -449,7 +459,7 @@
                                       <span class="visually-hidden">Loading...</span>
                                     </div>
                                   </div>
-                                  <div id="topfour"></div>>
+                                  <div id="topfour"></div>
                                 </div>
                                 <div class="flex-child bar-chart">
                                   <h4>Worst 100 Four Card Combinations</h4>
@@ -458,7 +468,7 @@
                                       <span class="visually-hidden">Loading...</span>
                                     </div>
                                   </div>
-                                  <div id="worstfour"></div>>
+                                  <div id="worstfour"></div>
                                 </div>
                               </div>
                             </div>
@@ -471,7 +481,7 @@
                                       <span class="visually-hidden">Loading...</span>
                                     </div>
                                   </div>
-                                  <div id="topfive"></div>>
+                                  <div id="topfive"></div>
                                 </div>
                                 <div class="flex-child bar-chart">
                                   <h4>Worst 100 Five Card Combinations</h4>
@@ -480,7 +490,7 @@
                                       <span class="visually-hidden">Loading...</span>
                                     </div>
                                   </div>
-                                  <div id="worstfive"></div>>
+                                  <div id="worstfive"></div>
                                 </div>
                               </div>
                             </div>
@@ -493,7 +503,7 @@
                                       <span class="visually-hidden">Loading...</span>
                                     </div>
                                   </div>
-                                  <div id="topsix"></div>>
+                                  <div id="topsix"></div>
                                 </div>
                                 <div class="flex-child bar-chart">
                                   <h4>Worst 100 Six Card Combinations</h4>
@@ -502,7 +512,7 @@
                                       <span class="visually-hidden">Loading...</span>
                                     </div>
                                   </div>
-                                  <div id="worstsix"></div>>
+                                  <div id="worstsix"></div>
                                 </div>
                               </div>
                             </div>
@@ -515,7 +525,7 @@
                                       <span class="visually-hidden">Loading...</span>
                                     </div>
                                   </div>
-                                  <div id="topseven"></div>>
+                                  <div id="topseven"></div>
                                 </div>
                                 <div class="flex-child bar-chart">
                                   <h4>Worst 100 Seven Card Combinations</h4>
@@ -524,7 +534,7 @@
                                       <span class="visually-hidden">Loading...</span>
                                     </div>
                                   </div>
-                                  <div id="worstseven"></div>>
+                                  <div id="worstseven"></div>
                                 </div>
                               </div>
                             </div>

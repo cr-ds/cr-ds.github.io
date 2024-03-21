@@ -85,6 +85,19 @@ h4 {
     margin-top: 145px;
 }
 
+#data-title {
+    margin: 10px 20px 0 20px;
+    text-align: left;
+    font-size: 30px !important;
+    font-weight: bold;
+    color: #4d8bdc;
+    text-shadow: #f9c66e 1px 0 10px;
+}
+
+#datalinklist {
+    margin: 15px;
+}
+
 .horizontal-line {
     width: 90%;
     margin-left: 5%;
@@ -201,4 +214,5 @@ h4 {
 .tile-img {
     width: 277px;
 }
+
 
